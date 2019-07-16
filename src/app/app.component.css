@@ -1,0 +1,45 @@
+.bg1 {
+    background-color:burlywood;
+    width: 100;
+    height: 1000px
+}
+
+.bg2 {
+    background-color:red;
+    width: 100;
+    height: 1000px
+}
+
+.bg3 {
+    background-color:blue;
+    width: 100;
+    height: 1000px
+}
+
+.bg4 {
+    background-color:blueviolet;
+    width: 100;
+    height: 1000px
+}
+
+
+
+/* @media print {
+    table { page-break-after: auto }
+    tr    { page-break-before: always; page-break-inside:avoid; page-break-after:always }
+    td    { page-break-before: always; page-break-inside:avoid; page-break-after:always }
+    thead { display:table-header-group }
+    tfoot { display:table-footer-group }
+    tbody { display: none }
+    p {
+        color: red;
+    }
+}
+
+@media screen {
+    thead { display: none; }    
+    tfoot { display: none; position: fixed; bottom:0}
+} */
+
+.header { display: none }
+.footer { display: none }

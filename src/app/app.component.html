@@ -1,20 +1,87 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<button (click)="print()">
+  Click
+  </button>
+<!-- <div id="1">
+  <div class="bg1">
+      div one
+  </div>  
+</div>
+
+<div id="2">
+  <div class="bg2" [@slide]="startAnimationDiv2 ? 'left':'right' ">
+      div one
+  </div>  
+</div>
+
+<div id="3">
+  <div class="bg3" [@slide]="startAnimationDiv3 ? 'left':'right' ">
+      div one  
+  </div>  
+</div>
+
+<div id="4"> 
+  <div class="bg4" [@slide]="startAnimationDiv4 ? 'left':'right' ">
+      div 4 {{startAnimationDiv4}}
+  </div>  
+</div> -->
+<div id="test">
+  <table style="border: none;width: 100%" border="1">
+      <thead>
+          <tr>
+            <td style="border: none">                
+                <div class="header-space">&nbsp;</div>
+            </td>
+          </tr>
+          <tr>
+              <th>Room&nbsp;No</th>
+              <th>Building</th>
+              <th>Floor</th>
+              <th>Room&nbsp;Category</th>
+              <th>Room&nbsp;Size</th>
+              <th>Room&nbsp;Type</th>
+              <th>Room&nbsp;Bed</th>
+              <th>Bedding</th>
+              <th>Feature</th>
+          </tr>
+      </thead>      
+          <tr id="f">
+              <th>Room&nbsp;No</th>
+              <th>Building</th>
+              <th>Floor</th>
+              <th>Room&nbsp;Category</th>
+              <th>Room&nbsp;Size</th>
+              <th>Room&nbsp;Type</th>
+              <th>Room&nbsp;Bed</th>
+              <th>Bedding</th>
+              <th>Feature</th>
+          </tr>
+    <tr *ngFor="let data of roomNoData;let index = index">
+      <td>{{data?.roomNumber}}</td>
+      <td>{{data?.buildingName}}</td>
+      <td>{{data?.floorName}}</td>
+      <td>{{data?.roomTypeName}}</td>
+      <td>{{data?.roomSpace}}</td>
+      <td>{{data?.roomCategoryName}}</td>
+      <td>{{data?.roomBedName}}</td>
+      <td>{{data?.roomBedDescription}}</td>      
+      <!-- <td>{{data?.roomCategoryId | getDataFormId : roomcategory :'id' : 'guests' : '-'}}</td>
+      <td>{{data?.roomCategoryId | getDataFormId : roomcategory :'id' : 'maxGuests' : '-'}}</td>  -->
+      <td >{{data?.roomFeatureDescription == undefined || data?.roomFeatureDescription == '' ? '-' : data?.roomFeatureDescription}}</td>
+    </tr>
+    <tfoot border="0">
+        <tr>
+          <td style="border: none">
+              <div class="footer-space">&nbsp;</div>
+          </td>
+        </tr>
+    </tfoot>
+  </table>
+  <div class="header" style="color: red; width: 100%;background-color: blue;-webkit-print-color-adjust: exact">
+    HEADER
+    <img src="assets/sing.jpg" alt="" width="50px" height="50px">
+  </div>
+  <div class="footer" style="color: red; width: 100%;background-color: blue;-webkit-print-color-adjust: exact">
+    FOOTER
+  </div>
+</div>
